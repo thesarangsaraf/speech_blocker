@@ -20,7 +20,6 @@ with speech_recognition.AudioFile(AUDIO_FILE) as source:
         SECONDS += 5
 
         speechToTextData = RECOGNIZER.recognize_google(audioDataInstance)
-        print(">>> " + speechToTextData)
 
         # open wave file
         waveAudio = wave.open(AUDIO_FILE)
